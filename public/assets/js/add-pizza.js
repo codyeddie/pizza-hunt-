@@ -64,9 +64,10 @@ const handlePizzaSubmit = event => {
     .then(postResponse => {
       console.log(postResponse);
     })
-    .catch(err => {
+    .catch(err => { 
       console.log(err);
       saveRecord(formData);
+      // DO INDEXED DB STUFF HERE
     });
 };
 
